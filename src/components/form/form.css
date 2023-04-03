@@ -1,0 +1,77 @@
+/* Form container */
+.form {
+  max-width: 500px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  grid-area: 3/1/-1/-1; /* place form in last row */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Form header */
+.form h1 {
+  font-size: 24px;
+  text-align: center;
+}
+
+/* Form fields */
+.form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.form input,
+.form select,
+.form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.form textarea {
+  height: 150px;
+}
+
+/* Error message */
+.form .error {
+  color: red;
+  margin-top: 5px;
+}
+
+/* Submit button */
+.form button[type="submit"] {
+  background-color: #4caf50;
+  width: 300px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.form button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+/* Clearfix to prevent floating issues */
+.form::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.salary {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+  font-size: 20px;
+}
